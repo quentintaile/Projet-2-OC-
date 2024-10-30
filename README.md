@@ -26,10 +26,8 @@ pip install -r requirements.txt
 Clonez ce dépôt sur votre machine locale :
 
 Copier le code
-git clone https://github.com/quentintaile/projet-2---Final.git
+git clone https://github.com/quentintaile/Projet-2-OC-.git
 
-Accédez au répertoire du projet :
-cd projet-2---Final
 
 Installez les dépendances :
 pip install -r requirements.txt
@@ -37,6 +35,9 @@ pip install -r requirements.txt
 # UTILISATION
 
 Une fois que tout est configuré, vous pouvez exécuter le script Python pour commencer à extraire les données :
+
+Crée l’environnement :
+python -m venv env
 
 Activer l'environnement : 
 env\Scripts\activate  
