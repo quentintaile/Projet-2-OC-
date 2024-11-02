@@ -113,6 +113,7 @@ def extraire_livres_par_categorie(url_categorie, nom_categorie):
             sauvegarder_image_miniature(donnees_livre['URL de l\'image'], donnees_livre['Titre'], nom_categorie)  # Sauvegarder l'image miniature
             livres.append(donnees_livre)
         
+        # Afficher le nom de catégorie
         print(f"Page {page} extraite pour la catégorie {nom_categorie}")
         page += 1  # Passer à la page suivante
     return livres
@@ -129,4 +130,5 @@ for nom_categorie, lien_categorie in categories:
         df.to_csv(f'feuilles_donnees/{nom_categorie}.csv', index=False, sep=';')
         print(f"Données sauvegardées pour la catégorie {nom_categorie}")
 
+# Afficher la fin du Scrapping
 print("Scraping terminé")
