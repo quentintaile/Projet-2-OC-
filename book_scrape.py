@@ -35,7 +35,8 @@ def extraire_donnees_livre(url_produit):
     prix_ht = soupe_produit.find('th', string='Price (excl. tax)').find_next_sibling('td').text.replace('£', '').strip() if soupe_produit.find('th', string='Price (excl. tax)') else 'Non disponible'
     
     # Récupérer la disponibilité en stock
-    disponibilite = soupe_produit.find('th', string='Availability').find_next_sibling('td').text.strip() if soupe_produit.find('th', string='Availability') else 'Non disponible'
+    disponibilite = ''.join(filter(str.isdigit, soupe_produit.find('th', string='Availability').find_next_sibling('td').text.strip())) if soupe_produit.find('th', string='Availability') else 'Non disponible'
+
     
     # Récupérer la description du produit si elle est présente
     description = soupe_produit.find('meta', {'name': 'description'})['content'].strip() if soupe_produit.find('meta', {'name': 'description'}) else 'No description available'
