@@ -6,7 +6,7 @@ import os
 base_url = 'https://books.toscrape.com/'
 url_base_livre = 'https://books.toscrape.com/catalogue/'
 
-# Créer les dossiers pour stocker les données et les images
+# Créer les dossiers pour stocker les données et les images complementaire
 os.makedirs('feuilles_donnees', exist_ok=True)
 os.makedirs('images', exist_ok=True)
 
