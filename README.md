@@ -16,9 +16,7 @@ Avant de pouvoir exécuter ce projet, assurez-vous d'avoir les outils suivants i
   - `beautifulsoup4`
   - `pandas`
   
-Vous pouvez installer les dépendances nécessaires en utilisant le fichier `requirements.txt` :
 
-pip install -r requirements.txt
 
 
 # INSTALLATION : 
